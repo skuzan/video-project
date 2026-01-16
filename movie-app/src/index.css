@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply font-sans bg-gradient-to-br from-dark-900 to-dark-800 min-h-screen text-white;
+  }
+
+  a {
+    @apply no-underline text-inherit;
+  }
+}
+
+@layer components {
+  /* Toast Container Düzeltmesi */
+  .Toastify__toast-container {
+    z-index: 9999;
+  }
+}
